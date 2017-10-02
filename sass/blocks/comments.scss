@@ -17,7 +17,7 @@
 .comments__item {
   margin: 0;
   padding: 0;
-  margin-bottom: 35px
+  margin-bottom: 35px;
 }
 
 .comments__text {
@@ -58,7 +58,7 @@
   &--prev {
     background-image: url("../img/icon-left-arrow.svg");
   }
-  &--next {
+&--next {
     background-image: url("../img/icon-right-arrow.svg");
   }
 
@@ -66,7 +66,7 @@
   &:focus {
     opacity: 0.6;
   }
-  &:active {
+&:active {
     opacity: 0.3;
   }
 }

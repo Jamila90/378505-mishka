@@ -1,20 +1,20 @@
 * {
-    outline: 1px dashed red;
+  outline: 1px dashed red;
 }
 
-@import './global/variables';
-@import 'normalize.scss';
-@import './blocks/intro.scss';
-@import './blocks/main-header';
-@import './blocks/products';
-@import './blocks/product';
-@import './blocks/goods-of-the-week';
-@import './blocks/about-us';
-@import './blocks/comments';
-@import './blocks/contacts';
-@import './blocks/page-footer';
-@import './blocks/modal';
-@import './blocks/catalog';
-@import './blocks/order';
-@import './global/global';
-@import './blocks/visually-hidden';
+@import "./global/variables";
+@import "normalize.scss";
+@import "./blocks/intro.scss";
+@import "./blocks/main-header";
+@import "./blocks/products";
+@import "./blocks/product";
+@import "./blocks/goods-of-the-week";
+@import "./blocks/about-us";
+@import "./blocks/comments";
+@import "./blocks/contacts";
+@import "./blocks/page-footer";
+@import "./blocks/modal";
+@import "./blocks/catalog";
+@import "./blocks/order";
+@import "./global/global";
+@import "./blocks/visually-hidden";

@@ -21,7 +21,7 @@
   &:focus {
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
   }
-  &:active {
+&:active {
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
   }
 }
@@ -37,7 +37,7 @@
     color: $black;
     opacity: 0.6;
   }
-  &:active {
+&:active {
     color: $black;
     opacity: 0.3;
   }
@@ -101,7 +101,7 @@
   &:focus {
     transform: translate(-50%, -50%) scale(1.2);
   }
-  &:active {
+&:active {
     transform: translate(-50%, -50%) scale(0.8);
     opacity: 0.3;
   }

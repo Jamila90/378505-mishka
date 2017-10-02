@@ -5,7 +5,7 @@
   &--interior {
     background-color: $light-green;
   }
-  &--toys {
+&--toys {
     background-color: $dark-green;
   }
 
@@ -14,9 +14,10 @@
     margin-top: -5px;
     padding-bottom: 33px;
   }
-  &:active .products__title {
+&:active .products__title {
     color: $white;
-    opacity: 0.3;}
+    opacity: 0.3;
+  }
 }
 
 .products__title {
@@ -24,6 +25,6 @@
   width: 110px;
   font-size: 19px;
   line-height: 24px;
-  color: $white ;
+  color: $white;
   font-weight: 700;
 }
