@@ -1,0 +1,119 @@
+.product {
+  position: relative;
+  margin-bottom: 30px;
+  border: 1px solid $light-gray;
+}
+
+.product__title {
+  margin: 0;
+  padding: 0;
+}
+
+.product__photo {
+  display: block;
+  line-height: 0;
+}
+
+.product__description {
+  padding: 30px 28px;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  }
+  &:active {
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  }
+}
+
+.product__link {
+  margin-bottom: 18px;
+  font-size: 17px;
+  color: $black;
+  font-weight: 700;
+
+  &:hover,
+  &:focus {
+    color: $black;
+    opacity: 0.6;
+  }
+  &:active {
+    color: $black;
+    opacity: 0.3;
+  }
+}
+
+.product__about {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 28px;
+  font-size: 13px;
+  line-height: 30px;
+  border-bottom: 1px solid $light-gray;
+}
+
+.product__price {
+  margin: 0;
+  padding: 0;
+  color: $black;
+  font-weight: 700;
+}
+
+.product__order {
+  margin-top: 28px;
+}
+
+.process {
+  padding: 30px 0;
+}
+
+.process__title {
+  margin: 0;
+  padding: 0;
+  padding-left: 90px;
+  margin-bottom: 30px;
+  font-size: 17px;
+  color: $black;
+}
+
+.process__video {
+  position: relative;
+  margin-bottom: 35px;
+  line-height: 0;
+}
+
+.process__play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transition: transform 0.2s ease;
+  transform: translate(-50%, -50%);
+  display: block;
+  width: 100px;
+  height: 76px;
+  border: 0;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+  background-image: url("../img/icon-play.svg");
+
+  &:hover,
+  &:focus {
+    transform: translate(-50%, -50%) scale(1.2);
+  }
+  &:active {
+    transform: translate(-50%, -50%) scale(0.8);
+    opacity: 0.3;
+  }
+}
+
+.process__description {
+  padding: 0 30px;
+}
+
+.process__description-text {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 30px;
+  font-size: 13px;
+}

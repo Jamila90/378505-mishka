@@ -1,0 +1,29 @@
+.products__item {
+  display: block;
+  padding: 28px 30px;
+
+  &--interior {
+    background-color: $light-green;
+  }
+  &--toys {
+    background-color: $dark-green;
+  }
+
+  &:hover,
+  &:focus {
+    margin-top: -5px;
+    padding-bottom: 33px;
+  }
+  &:active .products__title {
+    color: $white;
+    opacity: 0.3;}
+}
+
+.products__title {
+  display: block;
+  width: 110px;
+  font-size: 19px;
+  line-height: 24px;
+  color: $white ;
+  font-weight: 700;
+}

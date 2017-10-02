@@ -1,0 +1,85 @@
+.main-header {
+    border-bottom: 1px solid #ececec;
+    width: 320px;
+    margin: 0 auto;
+}
+
+.main-header__logo {
+  display: block;
+  width: 86px;
+  margin: 0 auto;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  line-height: 0;
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.top-menu__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.user-list__item {
+    padding: 30px;
+    border-bottom: 1px solid #ececec;
+}
+
+.site-list__item {
+    padding: 30px;
+    border-bottom: 1px solid #ececec;
+}
+
+.top-menu__toggle {
+  width: 20px;
+  height: 20px;
+  border: none;
+  background-repeat: no-repeat;
+
+  &--closed {
+    display: none;
+  }
+  &--opened {
+    display: block;
+  }
+}
+
+.site-list__link {
+  position: relative;
+  padding-left: 45px;
+  font-size: 17px;
+  line-height: 24px;
+  color: black;
+  font-weight: 700;
+
+  &:hover,
+  &:focus {
+    color: black, 60%;
+  }
+  &:active {
+    color: black, 30%;
+  }
+}
+
+.user-list__link {
+  position: relative;
+  padding-left: 45px;
+  font-size: 17px;
+  line-height: 24px;
+  color: black;
+  font-weight: 700;
+
+  &:hover,
+  &:focus {
+    color: black, 60%;
+  }
+  &:active {
+    color: black, 30%;
+  }
+}

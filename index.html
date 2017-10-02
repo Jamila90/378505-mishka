@@ -3,11 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
       <a class="main-header__logo">
-        <img src="http://placehold.it/150x100" width="86" height="35" alt="Логотип магазина «Мишка»">
+        <img src="img/logo-mobile.svg" width="86" height="35" alt="Логотип магазина «Мишка»">
       </a>
       <nav class="top-menu top-menu--opened">
         <button class="top-menu__toggle top-menu__toggle--closed" type="button">
@@ -31,7 +32,7 @@
         </ul>
       </nav>
     </header>
-      <main>
+      <main class="main-content">
       <section class="intro intro--changing-page">
         <h1 class="intro__title">
           Милые штучки ручной работы для дома
@@ -53,7 +54,7 @@
         </div>
         <div class="goods-of-the-week__about">
           <p class="goods-of-the-week__description">
-            Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.
+            Экологически чистая пряжа, <br> ручная работа. Доступны в шести расцветках, и трех размерах.
           </p>
           <table class="goods-of-the-week__table">
             <tr>
@@ -71,11 +72,11 @@
           </table>
         </div>
         <div class="goods-of-the-week__image">
-          <img src="http://placehold.it/150x100" width="150" height="100" alt="Товар недели">
+          <img src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Товар недели">
         </div>
         <div class="goods-of-the-week__order">
           <p class="goods-of-the-week__price">Цена: 990 руб.</p>
-          <a class="goods-of-the-week__to order button" href="#">Заказать</a>
+          <a class="goods-of-the-week__to-order button" href="#">Заказать</a>
         </div>
       </section>
       <section class="about-us">
@@ -112,7 +113,7 @@
             <span class="comments__author-email">@misssssiskras</span>
           </cite>
         </blockquote>
-        <div class="comments__controlls">
+        <div class="comments__controls">
           <button class="comments__button comments__button--prev" type="button">
             <span class="visually-hidden">Назад</span>
           </button>
@@ -122,27 +123,24 @@
         </div>
         <a class="comments__write button" href="comment-form.html">Написать</a>
       </section>
-    </main>
-
-    <footer class="page-footer">
       <section class="contacts">
         <h2 class="contacts__title">Контакты</h2>
-        <table class="contacts__table">
-          <tr>
-            <td>e-mail:</td>
-            <td>info@mimimishkashop.ru</td>
-          </tr>
-          <tr>
-            <td>адрес:</td>
-            <td>г.Санкт-Петербург, ул.Большая Конюшенная, д.19/8, офис 101</td>
-          </tr>
-        </table>
+        <div class="contacts__email">
+            <span>e-mail:</span>
+            <a class="contacts__link" href="#">info@mimimishkashop.ru</a>
+        </div>
+          <div class="contacts__address">
+            <span>адрес:</span>
+            <p class="contacts__text">г.Санкт-Петербург, ул.Большая Конюшенная, д.19/8, офис 101</p>
+        </div>
       <div class="contacts__map">
-
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6152511412683!2d30.32116901593964!3d59.938526269069975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fb661d55f%3A0xd0cc7f055debe430!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2s!4v1506962375066" width="320" height="455" frameborder="0" style="border:0" allowfullscreen></iframe>
       </div>
       <a class="contacts__write-us button" href="feedback-form.html">Напишите нам</a>
     </section>
+    </main>
 
+    <footer class="page-footer">
       <div class="page-footer__item social">
         <a class="social__item social__item--instagram" href="#">
           <span class="visually-hidden">Instagram</span>
@@ -157,7 +155,7 @@
       <div class="page-footer__item copyright">
         <p class="copyright__text">Разработано</p>
         <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive">
-          <img src="http://placehold.it/150x100" width="27" height="34" alt="Логотип HTMLAcademy">
+          <img src="img/logo-htmlacademy.svg" width="27" height="34" alt="Логотип HTMLAcademy">
         </a>
       </div>
     </footer>
@@ -174,7 +172,7 @@
           <input class="modal-form__input" type="radio" name="size-3" id="size-3">
           <label class="modal-form__label" for="size-3">L</label>
         </div>
-        <button class="button button-modal" type="submit">Добавить</button>
+        <button class="button modal-form__button" type="submit">Добавить</button>
       </form>
     </div>
 
