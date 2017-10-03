@@ -81,7 +81,8 @@
     background-color: $dark-gray;
     color: $white;
   }
-&:active {
+
+  & :active {
     background-color: $dark-gray;
     color: rgba(255, 255, 255, 0.3);
   }
