@@ -1,0 +1,22 @@
+.user-list__item {
+  padding: 30px;
+  border-bottom: 1px solid #ececec;
+}
+
+.user-list__link {
+  position: relative;
+  padding-left: 45px;
+  font-size: 17px;
+  line-height: 24px;
+  color: black;
+  font-weight: 700;
+
+  &:hover,
+  &:focus {
+    color: black, 60%;
+  }
+
+  &:active {
+    color: black, 30%;
+  }
+}

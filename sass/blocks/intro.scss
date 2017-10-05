@@ -1,6 +1,6 @@
 .intro {
-  margin-bottom: 30px;
   background-color: $light-gray;
+  border: 2px solid $black;
 
   &--changing-page {
     background-image: url("../img/hero-mobile@1x.jpg");
@@ -13,7 +13,7 @@
   padding-left: 30px;
   padding-right: 30px;
   padding-top: 75px;
-  padding-bottom: 80px;
+  padding-bottom: 120px;
   font-size: 27px;
   line-height: 30px;
   color: black;

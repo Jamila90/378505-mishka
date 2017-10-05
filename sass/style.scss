@@ -6,6 +6,7 @@
 @import "normalize.scss";
 @import "./blocks/intro.scss";
 @import "./blocks/main-header";
+@import "./blocks/top-menu";
 @import "./blocks/products";
 @import "./blocks/product";
 @import "./blocks/goods-of-the-week";
@@ -18,3 +19,11 @@
 @import "./blocks/order";
 @import "./global/global";
 @import "./blocks/visually-hidden";
+@import "./blocks/button";
+@import "./blocks/copyright";
+@import "./blocks/modal-form";
+@import "./blocks/order-form";
+@import "./blocks/site-list";
+@import "./blocks/social";
+@import "./blocks/user-list";
+@import "./blocks/process";

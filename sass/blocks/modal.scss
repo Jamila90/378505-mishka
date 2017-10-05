@@ -3,6 +3,7 @@
   margin: 0 auto;
   padding-left: 30px;
   padding-right: 30px;
+  border: 2px solid $black;
 }
 
 .modal__title {
@@ -13,11 +14,4 @@
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
-}
-
-.modal-form__button {
-  width: 100%;
-  background-color: $light-green;
-  color: $white;
-  border: none;
 }

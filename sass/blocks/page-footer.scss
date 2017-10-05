@@ -4,27 +4,9 @@
   width: 260px;
   margin: 0 auto;
   background-color: $light-gray;
+  border: 2px solid $black;
 }
 
 .page-footer__item {
   padding: 25px 28px;
-}
-
-.social {
-  border-bottom: 1px solid #e5e5e5;
-}
-
-.copyright {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.copyright__text {
-  margin: 0;
-  padding: 0;
-  font-size: 19px;
-  line-height: 18px;
-  color: $black;
-  font-weight: 700;
 }
