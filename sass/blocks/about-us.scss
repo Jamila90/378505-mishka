@@ -1,0 +1,44 @@
+.about-us {
+  padding-left: 30px;
+  padding-right: 30px;
+  border: 2px solid $black;
+}
+
+.about-us__title {
+  margin: 0;
+  padding: 0;
+  font-size: 25px;
+  line-height: 30px;
+  color: $black;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.about-us__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.about-us__item {
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: 700;
+  position: relative;
+  padding-top: 57px;
+  margin-bottom: 28px;
+  color: $black;
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 40px;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+}

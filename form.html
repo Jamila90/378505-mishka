@@ -3,11 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
-      <a class="main-header__logo">
-        <img src="http://placehold.it/150x100" width="86" height="35" alt="Логотип магазина «Мишка»">
+      <a class="main-header__logo" href="index.html">
+        <img src="img/logo-mobile.svg" width="86" height="35" alt="Логотип магазина «Мишка»">
       </a>
       <nav class="top-menu top-menu--opened">
         <button class="top-menu__toggle top-menu__toggle--closed" type="button">
@@ -31,7 +32,7 @@
         </ul>
       </nav>
     </header>
-      <main>
+      <main class="main-content">
       <section class="intro intro--inner-page">
         <h1 class="intro__title">
           Вязание на заказ
@@ -59,27 +60,27 @@
           <section class="order-form__fieldset">
             <h2 class="order-form__legend">Цвет</h2>
             <ul class="order-form__list">
-              <li class="order-form__item order-form__item--choice">
+              <li class="order-form__item">
                 <input class="order-form__input" type="checkbox" name="color" value="1" id="color-1" checked>
                 <label class="order-form__label order-form__label--checkbox" for="color-1">Белый</label>
               </li>
-              <li class="order-form__item order-form__item--choice">
+              <li class="order-form__item">
                 <input class="order-form__input" type="checkbox" name="color" value="2" id="color-2" checked>
                 <label class="order-form__label order-form__label--checkbox" for="color-2">Серый</label>
               </li>
-              <li class="order-form__item order-form__item--choice">
+              <li class="order-form__item">
                 <input class="order-form__input" type="checkbox" name="color" value="3" id="color-3">
                 <label class="order-form__label order-form__label--checkbox" for="color-3">«Тиффани»</label>
               </li>
-              <li class="order-form__item order-form__item--choice">
+              <li class="order-form__item">
                 <input class="order-form__input" type="checkbox" name="color" value="4" id="color-4">
                 <label class="order-form__label order-form__label--checkbox" for="color-4">Черный</label>
               </li>
-              <li class="order-form__item order-form__item--choice">
+              <li class="order-form__item">
                 <input class="order-form__input" type="checkbox" name="color" value="5" id="color-5">
                 <label class="order-form__label order-form__label--checkbox" for="color-5">Розовый</label>
               </li>
-              <li class="order-form__item order-form__item--choice">
+              <li class="order-form__item">
                 <input class="order-form__input" type="checkbox" name="color" value="6" id="color-6">
                 <label class="order-form__label order-form__label--checkbox" for="color-6">Оранжевый</label>
               </li>
@@ -88,15 +89,15 @@
           <section class="order-form__fieldset">
             <h2 class="order-form__legend">ФИО</h2>
             <ul class="order-form__list">
-              <li class="order-form__item order-form__item--text">
+              <li class="order-form__item">
                 <label class="order-form__label" for="name">Имя</label>
                 <input class="order-form__text" type="text" name="name" id="name" placeholder="Введите ваше имя*" required="">
               </li>
-              <li class="order-form__item order-form__item--text">
+              <li class="order-form__item">
                 <label class="order-form__label" for="last-name">Фамилия</label>
                 <input class="order-form__text" type="text" name="last-name" id="last-name" placeholder="Укажите фамилию*" required="">
               </li>
-              <li class="order-form__item order-form__item--text">
+              <li class="order-form__item">
                 <label class="order-form__label" for="middle-name">Отчество</label>
                 <input class="order-form__text" type="text" name="middle-name" id="middle-name" placeholder="Отчество, если желаете">
               </li>
@@ -116,7 +117,7 @@
           </section>
           <div class="order-form__fieldset">
             <p class="order-form__note">*Поля обязательны для заполнения</p>
-            <button class="submit" type="submit">Отправить заказ</button>
+            <button class="order-form__button button" type="submit">Отправить заказ</button>
           </div>
         </form>
       </section>
@@ -136,7 +137,7 @@
       <div class="page-footer__item copyright">
         <p class="copyright__text">Разработано</p>
         <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive">
-          <img src="http://placehold.it/150x100" width="27" height="34" alt="Логотип HTMLAcademy">
+          <img src="img/logo-htmlacademy.svg" width="27" height="34" alt="Логотип HTMLAcademy">
         </a>
       </div>
     </footer>

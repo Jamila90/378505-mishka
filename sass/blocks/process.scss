@@ -1,0 +1,55 @@
+.process {
+  padding: 30px 0;
+}
+
+.process__title {
+  margin: 0;
+  padding: 0;
+  padding-left: 90px;
+  margin-bottom: 30px;
+  font-size: 17px;
+  color: $black;
+}
+
+.process__video {
+  position: relative;
+  margin-bottom: 35px;
+  line-height: 0;
+}
+
+.process__play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transition: transform 0.2s ease;
+  transform: translate(-50%, -50%);
+  display: block;
+  width: 100px;
+  height: 76px;
+  border: 0;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+  background-image: url("../img/icon-play.svg");
+
+  &:hover,
+  &:focus {
+    transform: translate(-50%, -50%) scale(1.2);
+  }
+
+  &:active {
+    transform: translate(-50%, -50%) scale(0.8);
+    opacity: 0.3;
+  }
+}
+
+.process__description {
+  padding: 0 30px;
+}
+
+.process__description-text {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 30px;
+  font-size: 13px;
+}

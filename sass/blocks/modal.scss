@@ -1,0 +1,17 @@
+.modal {
+  width: 260px;
+  margin: 0 auto;
+  padding-left: 30px;
+  padding-right: 30px;
+  border: 2px solid $black;
+}
+
+.modal__title {
+  margin: 0;
+  font-size: 25px;
+  line-height: 30px;
+  color: $black;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}

@@ -3,11 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
-      <a class="main-header__logo">
-        <img src="http://placehold.it/150x100" width="86" height="35" alt="Логотип магазина «Мишка»">
+      <a class="main-header__logo" href="index.html">
+        <img src="img/logo-mobile.svg" width="86" height="35" alt="Логотип магазина «Мишка»">
       </a>
       <nav class="top-menu top-menu--opened">
         <button class="top-menu__toggle top-menu__toggle--closed" type="button">
@@ -32,7 +33,7 @@
       </nav>
     </header>
 
-      <main>
+      <main class="main-content">
       <section class="intro intro--inner-page">
         <h1 class="intro__title">
           Каталог товаров
@@ -42,7 +43,7 @@
         <h2 class="visually-hidden">Товары</h2>
         <article class="product">
           <a class="product__photo" href="#" title="Зайчик-попрыгайчик">
-            <img src="http://placehold.it/150x100" width="150" height="100" alt="Зайчик-попрыгайчик">
+            <img src="img/photo-hare-mobile@1x.jpg" width="260" height="195" alt="Зайчик-попрыгайчик">
           </a>
           <div class="product__description">
             <h2 class="product__title">
@@ -59,7 +60,7 @@
         </article>
         <article class="product">
           <a class="product__photo" href="#" title="Корзинка для белья">
-            <img src="http://placehold.it/150x100" width="150" height="100" alt="Корзинка для белья">
+            <img src="img/photo-bowl-mobile@1x.jpg" width="260" height="195" alt="Корзинка для белья">
           </a>
           <div class="product__description">
             <h2 class="product__title">
@@ -76,7 +77,7 @@
         </article>
         <article class="product">
           <a class="product__photo" href="#" title="Большая корзинка для игрушек">
-            <img src="http://placehold.it/150x100" width="150" height="100" alt="Большая корзинка для игрушек">
+            <img src="img/photo-toys-mobile@1x.jpg" width="260" height="195" alt="Большая корзинка для игрушек">
           </a>
           <div class="product__description">
             <h2 class="product__title">
@@ -94,14 +95,17 @@
         <article class="process">
           <h2 class="process__title">Процесс производства</h2>
           <div class="process__video">
-            <img src="http://placehold.it/150x100" width="150" height="100" alt="Процесс производства">
+            <img src="img/video-mobile@1x.jpg" width="260" height="150" alt="Процесс производства">
+            <button class="process__play-button" type="button">
+              <span class="visually-hidden">Воспроизвести видео</span>
+            </button>
           </div>
           <div class="process__description">
             <p class="process__description-text">
               По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
             </p>
           </div>
-          <a class="button" href="#">Сделать заказ</a>
+          <a class="button process__button" href="#">Сделать заказ</a>
         </article>
       </section>
     </main>
@@ -121,7 +125,7 @@
       <div class="page-footer__item copyright">
         <p class="copyright__text">Разработано</p>
         <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive">
-          <img src="http://placehold.it/150x100" width="27" height="34" alt="Логотип HTMLAcademy">
+          <img src="img/logo-htmlacademy.svg" width="27" height="34" alt="Логотип HTMLAcademy">
         </a>
       </div>
     </footer>
@@ -138,7 +142,7 @@
           <input class="modal-form__input" type="radio" name="size-3" id="size-3">
           <label class="modal-form__label" for="size-3">L</label>
         </div>
-        <button class="button button-modal" type="submit">Добавить</button>
+        <button class="button modal-form__button" type="submit">Добавить</button>
       </form>
     </div>
 
