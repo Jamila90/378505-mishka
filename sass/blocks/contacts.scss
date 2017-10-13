@@ -1,7 +1,12 @@
 .contacts {
   padding-left: 30px;
   padding-right: 30px;
-  border: 2px solid $black;
+}
+
+.contacts__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .contacts__title {
@@ -13,16 +18,24 @@
   font-weight: 700;
 }
 
-.contacts__email {
-  margin-bottom: 30px;
-  font-size: 15px;
-  line-height: 30px;
+.contacts__name {
+  margin: 0;
+  padding: 0;
+  margin-right: 26px;
 }
 
 .contacts__link {
   padding-left: 20px;
   color: $dark-gray;
   border-bottom: 1px solid $light-green;
+}
+
+.contacts__item {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding-bottom: 30px;
+  line-height: 30px;
 }
 
 .contacts__address {
@@ -46,4 +59,98 @@
 
 .contacts__write-us {
   margin-bottom: 40px;
+}
+
+@media (min-width: $tablet-width) {
+  .contacts {
+    width: 668px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .contacts__title {
+    font-size: 43px;
+    line-height: 50px;
+    margin-bottom: 35px;
+  }
+
+  .contacts__list {
+    display: flex;
+  }
+
+  .contacts__item {
+    width: 50%;
+    margin-bottom: 28px;
+  }
+
+  .contacts__name {
+    font-size: 17px;
+    margin-top: 14px;
+  }
+
+  .contacts__link {
+    width: 195px;
+    font-size: 17px;
+    padding: 0;
+    margin-top: 14px;
+  }
+
+  .contacts__value {
+    font-size: 17px;
+    margin-top: 14px;
+    margin-bottom: 0;
+  }
+
+  .contacts__button {
+    width: 668px;
+  }
+
+  .contacts__write-us {
+    width: 230px;
+    margin: 48px auto;
+    margin-bottom: 57px;
+  }
+
+  .contacts__map iframe {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1050px;
+    margin-bottom: 50px;
+  }
+
+  .contacts__wrap {
+    width: 350px;
+    margin-top: 140px;
+    padding: 0;
+    padding-left: 175px;
+  }
+
+  .contacts__list {
+    flex-direction: column;
+  }
+
+  .contacts__item {
+    width: auto;
+    margin: 0;
+  }
+
+  .contacts__map {
+    width: 525px;
+    margin-top: 65px;
+  }
+
+  .contacts__button {
+    width: 235px;
+    padding-left: 175px;
+  }
+
+  .contacts__write-us {
+    margin-top: -60px;
+  }
 }

@@ -1,9 +1,11 @@
 .goods-of-the-week {
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
   padding-left: 30px;
   padding-right: 30px;
   padding-top: 29px;
   padding-bottom: 40px;
-  border: 2px solid $black;
 }
 
 .goods-of-the-week__title {
@@ -61,4 +63,115 @@
   color: $dark-gray;
   font-weight: 700;
   text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .goods-of-the-week {
+    width: 668px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 35px;
+    padding-bottom: 70px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 50px;
+  }
+
+  .goods-of-the-week__heading {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: flex-end;
+    margin-bottom: 52px;
+  }
+
+  .goods-of-the-week__title {
+    font-size: 45px;
+    line-height: 50px;
+    margin: 0;
+  }
+
+  .goods-of-the-week__subtitle {
+    width: 85px;
+    margin-left: 151px;
+    text-align: center;
+    font-size: 17px;
+    line-height: 18px;
+    margin-bottom: 3px;
+  }
+
+  .goods-of-the-week__about {
+    width: 290px;
+  }
+
+  .goods-of-the-week__table {
+    width: 100%;
+    margin-bottom: 28px;
+  }
+
+  .goods-of-the-week__image {
+    width: 334px;
+    margin: 0;
+    height: 405px;
+  }
+
+  .goods-of-the-week__order {
+    width: 290px;
+    margin-top: -110px;
+  }
+
+  .goods-of-the-week__price {
+    margin-bottom: 36px;
+    font-size: 19px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .goods-of-the-week {
+    width: 1050px;
+    padding-top: 69px;
+    flex-direction: column;
+  }
+
+  .goods-of-the-week__heading {
+    width: 700px;
+    margin-top: -600px;
+  }
+
+  .goods-of-the-week__title {
+    font-size: 57px;
+    line-height: 57px;
+  }
+
+  .goods-of-the-week__subtitle {
+    order: -1;
+    margin: 0 40px 0 40px;
+  }
+
+  .goods-of-the-week__about {
+    margin-left: 175px;
+  }
+
+  .goods-of-the-week__description {
+    margin-bottom: 45px;
+    font-size: 18px;
+    line-height: 32px;
+  }
+
+  .goods-of-the-week__table {
+    margin-bottom: 215px;
+  }
+
+  .goods-of-the-week__image {
+    width: 525px;
+    height: 636px;
+    order: -1;
+    margin-left: auto;
+  }
+
+  .goods-of-the-week__order {
+    width: 290px;
+    margin-left: 175px;
+  }
 }

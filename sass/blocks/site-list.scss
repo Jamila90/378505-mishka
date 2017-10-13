@@ -8,15 +8,70 @@
   padding-left: 45px;
   font-size: 17px;
   line-height: 24px;
-  color: black;
+  color: $black;
   font-weight: 700;
 
   &:hover,
   &:focus {
-    color: black, 60%;
+    color: $black;
+    opacity: 0.6;
   }
 
   &:active {
-    color: black, 30%;
+    color: $black;
+    opacity: 0.3;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .site-list {
+    display: flex;
+    flex-wrap: wrap;
+    order: 3;
+    z-index: 1;
+  }
+
+  .site-list__item {
+    padding: 19px 0;
+    border: none;
+  }
+
+  .site-list__link {
+    display: flex;
+    min-width: 167px;
+    padding-left: 0;
+    font-size: 16px;
+
+    &:hover,
+    &:focus {
+      color: black, 60%;
+    }
+
+    &:active {
+      color: black, 30%;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-list {
+    order: -1;
+    width: auto;
+  }
+
+  .site-list__item:first-child {
+    padding-right: 37px;
+    padding-left: 0;
+    border-right: 1px solid $light-gray;
+  }
+
+  .site-list__link {
+    min-width: auto;
+    font-size: 18px;
+  }
+
+  .site-list__item {
+    padding-top: 30px;
+    padding-left: 33px;
   }
 }

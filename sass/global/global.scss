@@ -20,6 +20,19 @@ a {
   margin: 0 auto;
 }
 
+@media (min-width: $tablet-width) {
+  .main-content {
+    width: 768px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-content {
+    width: 1150px;
+  }
+}
+
 @font-face {
   font-family: "Open Sans";
   src: url("../fonts/opensans.woff2") format("woff2"), url("../fonts/opensans.woff") format("woff");
