@@ -12,3 +12,15 @@
   color: $black;
   font-weight: 700;
 }
+
+@media (min-width: $tablet-width) {
+  .copyright__text {
+    margin-left: 48px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .copyright__text {
+    margin-left: 175px;
+  }
+}

@@ -1,5 +1,6 @@
 .products {
-  border: 2px solid $black;
+  display: flex;
+  flex-direction: column;
 }
 
 .products__item {
@@ -33,4 +34,20 @@
   line-height: 24px;
   color: $white;
   font-weight: 700;
+}
+
+@media (min-width: $tablet-width) {
+  .products {
+    flex-direction: row;
+  }
+
+  .products__item {
+    width: 50%;
+    padding: 35px;
+  }
+
+  .products__title {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
