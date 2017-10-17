@@ -25,6 +25,11 @@ a {
     width: 768px;
     margin: 0 auto;
   }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
 }
 
 @media (min-width: $desktop-width) {

@@ -14,11 +14,18 @@
 
   &:hover,
   &:focus {
+    .user-list__icon {
+      fill: $light-green;
+    }
     color: $black;
     opacity: 0.6;
   }
 
   &:active {
+    .user-list__icon {
+      fill: $light-green;
+      opacity: 0.3;
+    }
     color: $black;
     opacity: 0.3;
   }
@@ -30,6 +37,7 @@
   top: 4%;
   width: 18px;
   height: 19px;
+  fill: #d3d2d2;
 }
 
 @media (min-width: $tablet-width) {
