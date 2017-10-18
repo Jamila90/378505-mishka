@@ -1,33 +1,44 @@
-.contacts {
-  padding-left: 30px;
-  padding-right: 30px;
-}
-
 .contacts__list {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
+.contacts__wrap {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
 .contacts__title {
+  position: relative;
   margin: 0;
   padding: 0;
-  font-size: 18px;
+  font-size: 19px;
   line-height: 30px;
   color: $black;
   font-weight: 700;
+  margin-bottom: 25px;
 }
 
 .contacts__name {
   margin: 0;
   padding: 0;
-  margin-right: 26px;
+  margin-right: 31px;
 }
 
 .contacts__link {
-  padding-left: 20px;
   color: $dark-gray;
   border-bottom: 1px solid $light-green;
+  font-size: 16px;
+
+  &:hover,
+  &:focus {
+    color: $light-green;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .contacts__item {
@@ -36,6 +47,11 @@
   align-items: flex-start;
   padding-bottom: 30px;
   line-height: 30px;
+}
+
+.contacts__value {
+  margin: 0;
+  font-size: 15.8px;
 }
 
 .contacts__address {
@@ -57,21 +73,30 @@
   margin-bottom: 40px;
 }
 
+.contacts__button {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
 .contacts__write-us {
   margin-bottom: 40px;
 }
 
+.contacts__icon {
+  display: none;
+}
+
 @media (min-width: $tablet-width) {
-  .contacts {
-    width: 668px;
+  .contacts__wrap {
     padding-left: 50px;
     padding-right: 50px;
   }
 
   .contacts__title {
-    font-size: 43px;
+    font-size: 44px;
     line-height: 50px;
     margin-bottom: 35px;
+    letter-spacing: 1px;
   }
 
   .contacts__list {
@@ -80,7 +105,7 @@
 
   .contacts__item {
     width: 50%;
-    margin-bottom: 28px;
+    margin-bottom: 24px;
   }
 
   .contacts__name {
@@ -102,7 +127,8 @@
   }
 
   .contacts__button {
-    width: 668px;
+    padding-left: 50px;
+    padding-right: 50px;
   }
 
   .contacts__write-us {
@@ -114,6 +140,13 @@
   .contacts__map iframe {
     margin-bottom: 0;
   }
+
+  .contacts__icon {
+    display: block;
+    position: absolute;
+    right: 3px;
+    top: -17px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -121,7 +154,9 @@
     display: flex;
     flex-wrap: wrap;
     width: 1050px;
-    margin-bottom: 50px;
+    margin-bottom: 48px;
+    padding-left: 50px;
+    padding-right: 50px;
   }
 
   .contacts__wrap {
@@ -138,6 +173,7 @@
   .contacts__item {
     width: auto;
     margin: 0;
+    padding-bottom: 15px;
   }
 
   .contacts__map {
@@ -152,5 +188,16 @@
 
   .contacts__write-us {
     margin-top: -60px;
+  }
+
+  .contacts__title {
+    font-size: 54px;
+    line-height: 46px;
+    margin-bottom: 39px;
+  }
+
+  .contacts__icon {
+    left: -112px;
+    top: -17px;
   }
 }

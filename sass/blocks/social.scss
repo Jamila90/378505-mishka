@@ -1,10 +1,25 @@
 .social {
-  padding-top: 48px;
-  padding-bottom: 22px;
   display: flex;
-  justify-content: space-around;
-  align-items: flex-end;
+  justify-content: center;
+  align-items: center;
   border-bottom: 1px solid #e5e5e5;
+}
+
+.social__item {
+  margin-right: 41px;
+
+  &:hover .social__icon,
+  &:focus .social__icon {
+    path {
+      fill: $light-green;
+    }
+  }
+
+  &:active .social__icon {
+    path {
+      opacity: 0.3;
+    }
+  }
 }
 
 .social__item--instagram {
@@ -20,13 +35,13 @@
 .social__item--twitter {
   width: 20px;
   height: 21px;
+  margin-right: 10px;
 }
 
 @media (min-width: $tablet-width) {
   .social {
     border: none;
     display: flex;
-    justify-content: space-evenly;
-    padding-top: 16px;
+    justify-content: center;
   }
 }

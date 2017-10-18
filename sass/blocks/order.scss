@@ -4,8 +4,14 @@
 
 .order__title {
   margin: 0;
-  padding: 30px 30px;
+  padding: 0 30px;
   font-size: 13px;
+  letter-spacing: 0.3px;
+  margin-bottom: 24px;
+}
+
+.order__string {
+  display: none;
 }
 
 @media (min-width: $tablet-width) {
@@ -16,6 +22,11 @@
     padding-right: 50px;
     font-size: 17px;
     line-height: 30px;
+    letter-spacing: 0.5px;
+  }
+
+  .order__transfer {
+    display: none;
   }
 }
 

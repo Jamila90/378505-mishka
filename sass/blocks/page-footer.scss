@@ -11,7 +11,7 @@
 }
 
 .page-footer__item {
-  padding: 25px 28px;
+  padding: 24px 0;
 }
 
 @media (min-width: $tablet-width) {
@@ -24,7 +24,7 @@
   }
 
   .page-footer__item {
-    width: 33%;
+    width: 34%;
     padding: 51px 0;
   }
 }

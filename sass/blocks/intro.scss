@@ -11,7 +11,7 @@
 .intro__title {
   padding-left: 30px;
   padding-right: 30px;
-  padding-top: 75px;
+  padding-top: 71px;
   padding-bottom: 120px;
   font-size: 27px;
   line-height: 30px;
@@ -19,20 +19,29 @@
   font-weight: 700;
   text-align: center;
   margin: 0;
+  letter-spacing: 1px;
 }
 
 .intro__inner {
   position: relative;
   width: 320px;
-  height: 177px;
+  height: 175px;
   margin: 0 auto;
   margin-bottom: 30px;
 }
 
+.intro__inner--page {
+  position: relative;
+  width: 320px;
+  height: 175px;
+  margin: 0 auto;
+  margin-bottom: 24px;
+}
+
 .intro__title--inner {
-  padding-top: 75px;
+  padding-top: 71px;
   padding-bottom: 73px;
-  font-size: 27px;
+  font-size: 29px;
   line-height: 30px;
   color: black;
   font-weight: 700;
@@ -57,6 +66,9 @@
     line-height: 50px;
     padding-bottom: 372px;
     padding-top: 154px;
+    letter-spacing: 2px;
+    padding-left: 44px;
+    padding-right: 39px;
   }
 
   .intro__inner {
@@ -65,11 +77,25 @@
     margin-bottom: 78px;
   }
 
+  .intro__inner--page {
+    width: 768px;
+    height: 225px;
+    margin-bottom: 73px;
+  }
+
   .intro__title--inner {
     padding-top: 96px;
     padding-bottom: 80px;
-    font-size: 43px;
+    font-size: 45px;
     line-height: 50px;
+  }
+
+  .intro__title--inner-page {
+    padding-top: 96px;
+    padding-bottom: 84px;
+    font-size: 44px;
+    line-height: 45px;
+    letter-spacing: 1px;
   }
 }
 
@@ -82,8 +108,11 @@
 
   .intro__title {
     font-size: 53px;
-    line-height: 57px;
+    line-height: 58px;
     padding-bottom: 358px;
+    letter-spacing: 2.3px;
+    padding-left: 266px;
+    padding-right: 266px;
   }
 
   .intro__inner {
@@ -92,8 +121,16 @@
     margin-bottom: 135px;
   }
 
+  .intro__inner--page {
+    width: 1050px;
+    height: 249px;
+    margin-bottom: 127px;
+  }
+
   .intro__title--inner {
     font-size: 55px;
     line-height: 50px;
+    padding-bottom: 100px;
+    padding-top: 98px;
   }
 }

@@ -1,17 +1,17 @@
 .comments {
+  margin-bottom: 88px;
   padding-left: 30px;
   padding-right: 30px;
-  padding-bottom: 50px;
 }
 
 .comments__title {
   margin: 0;
   padding: 0;
-  font-size: 25px;
+  font-size: 26px;
   line-height: 30px;
   color: #000000;
   font-weight: 700;
-  margin-bottom: 35px;
+  margin-bottom: 25px;
 }
 
 .comments__item {
@@ -24,14 +24,25 @@
   margin: 0;
   padding: 0;
   line-height: 30px;
-  margin-bottom: 35px;
+  font-size: 13.6px;
+  letter-spacing: 1px;
+  margin-bottom: 26px;
+}
+
+.comments__string,
+.comments__transfer {
+  display: none;
 }
 
 .comments__author-name {
-  margin-bottom: 5px;
-  font-size: 17px;
+  font-size: 16.2px;
   color: $black;
   font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.comments__author-email {
+  letter-spacing: 1px;
 }
 
 .comments__controls {
@@ -86,14 +97,14 @@
     padding-bottom: 125px;
     background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
-    margin-bottom: 62px;
+    margin-bottom: 72px;
   }
 
   .comments__title {
     font-size: 43px;
     line-height: 50px;
     order: 1;
-    margin-bottom: 45px;
+    margin-bottom: 50px;
   }
 
   .comments__item {
@@ -104,7 +115,7 @@
 
   .comments__text {
     font-size: 16px;
-    margin-bottom: 70px;
+    margin-bottom: 57px;
   }
 
   .comments__author {
@@ -113,11 +124,16 @@
     flex-direction: column;
   }
 
+  .comments__author-name {
+    font-size: 17.2px;
+    margin-bottom: 6px;
+  }
+
   .comments__controls {
     width: 170px;
     order: 4;
     margin-left: auto;
-    margin-top: -61px;
+    margin-top: -52px;
     margin-right: 3px;
     border: none;
     margin-bottom: 0;
@@ -133,10 +149,22 @@
 @media (min-width: $desktop-width) {
   .comments {
     width: 1050px;
+    background-image: url("../img/review@1x.jpg");
+    background-position: 6% 8px;
+    padding-top: 83px;
+  }
+
+  .comments__transfer {
+    display: none;
+  }
+
+  .comments__string {
+    display: block;
   }
 
   .comments__title {
     margin-left: 175px;
+    font-size: 53px;
   }
 
   .comments__item {
@@ -151,8 +179,8 @@
   }
 
   .comments__text {
-    font-size: 17px;
-    margin-bottom: 27px;
+    font-size: 16px;
+    margin-bottom: 40px;
   }
 
   .comments__write {
