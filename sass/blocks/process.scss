@@ -81,6 +81,10 @@
   fill: $light-green;
 }
 
+.process__string {
+  display: none;
+}
+
 @media (min-width: $tablet-width) {
   .process__items {
     display: flex;
@@ -128,7 +132,7 @@
 @media (min-width: $desktop-width) {
   .process {
     padding: 0;
-    margin-bottom: 60px;
+    margin-bottom: 103px;
   }
 
   .process__items {
@@ -136,6 +140,7 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    padding-bottom: 0;
   }
 
   .process__video {
