@@ -29,6 +29,7 @@
   margin-bottom: 26px;
 }
 
+.comments__string,
 .comments__transfer {
   display: none;
 }
@@ -155,6 +156,10 @@
 
   .comments__transfer {
     display: none;
+  }
+
+  .comments__string {
+    display: block;
   }
 
   .comments__title {
