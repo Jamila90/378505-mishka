@@ -6,17 +6,17 @@
   .footer-logo {
     display: block;
 
-    &:hover .footer-logo__image,
-    &:focus .footer-logo__image {
+    &:hover .footer-logo__icon,
+    &:focus .footer-logo__icon {
       fill: $light-green;
     }
 
-    &:active .footer-logo__image {
+    &:active .footer-logo__icon {
       opacity: 0.3;
     }
   }
 
-  .footer-logo__image {
+  .footer-logo__icon {
     width: 102px;
     height: 34px;
   }

@@ -1,4 +1,5 @@
 .goods-of-the-week {
+  position: relative;
   display: flex;
   margin: 0 auto;
   flex-direction: column;
@@ -81,6 +82,12 @@
   margin: auto;
 }
 
+.goods-of-the-week__icon {
+  position: absolute;
+  bottom: -49px;
+  width: 320px;
+}
+
 @media (min-width: $tablet-width) {
   .goods-of-the-week {
     width: 668px;
@@ -161,6 +168,12 @@
     font-size: 21px;
     padding-top: 3px;
   }
+
+  .goods-of-the-week__icon {
+    bottom: 0;
+    width: 768px;
+    left: 0;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -211,5 +224,11 @@
   .goods-of-the-week__order {
     width: 290px;
     margin-left: 175px;
+  }
+
+  .goods-of-the-week__icon {
+    bottom: -25px;
+    width: 1150px;
+    left: 0;
   }
 }
