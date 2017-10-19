@@ -10,15 +10,13 @@
 
   &:hover .social__icon,
   &:focus .social__icon {
-    path {
-      fill: $light-green;
-    }
+
+    fill: $light-green;
   }
 
   &:active .social__icon {
-    path {
-      opacity: 0.3;
-    }
+
+    opacity: 0.3;
   }
 }
 
