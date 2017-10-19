@@ -379,6 +379,10 @@
     background-color: $light-gray;
   }
 
+  .order-form__text--gray {
+    background-color: $light-gray;
+  }
+
   .order-form__item--radio {
     min-height: 52px;
   }
@@ -514,7 +518,6 @@
   .order-form__legend {
     min-width: 115px;
     margin: 0;
-    padding-top: 50px;
     padding-left: 60px;
   }
 
@@ -546,7 +549,7 @@
   .order-form__item--textarea {
     margin-top: 26px;
     margin-bottom: 24px;
-    width: 700px;
+    width: 875px;
   }
 
   .order-form__note {
@@ -567,7 +570,7 @@
 
   .order-form__item--tel,
   .order-form__item--email {
-    width: 700px;
+    width: 875px;
   }
 
   .order-form__icon--tel {
@@ -595,14 +598,14 @@
   }
 
   .order-form__legend--tel {
-    padding-top: 65px;
+    padding-top: 40px;
   }
 
   .order-form__legend--email {
-    padding-top: 43px;
+    padding-top: 20px;
   }
 
   .order-form__legend--additionally {
-    padding-top: 68px;
+    margin-bottom: 80px;
   }
 }
