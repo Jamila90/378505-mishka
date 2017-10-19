@@ -52,7 +52,7 @@
   letter-spacing: 1px;
 }
 
-.products__icon--fill {
+.products__bg-fill {
   display: none;
 }
 
@@ -67,6 +67,12 @@
     width: 50%;
     padding: 35px;
     padding-bottom: 20px;
+
+    &:hover,
+    &:focus {
+      margin-top: -5px;
+      padding-bottom: 25px;
+    }
   }
 
   .products__title {
@@ -75,7 +81,7 @@
     padding: 0;
   }
 
-  .products__icon--fill {
+  .products__bg-fill {
     position: absolute;
     display: block;
     top: 100px;

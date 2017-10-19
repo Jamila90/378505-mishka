@@ -52,7 +52,7 @@
             <a class="sale-list__link" href="#">Распродажа</a>
           </li>
           <li class="sale-list__item sale-list__item--delivery">
-            <a class="sale-list__link--delivery" href="#">Бесплатная доставка по России</a>
+            <a class="sale-list__link sale-list__link--delivery" href="#">Бесплатная доставка по России</a>
           </li>
         </ul>
       </nav>
@@ -61,7 +61,7 @@
       <main class="main-content">
       <section class="intro intro--inner-page">
         <div class="intro__inner">
-          <h1 class="intro__title--inner">
+          <h1 class="intro__title intro__title--inner">
               Каталог товаров
           </h1>
           <svg class="intro__icon" width="1150px" height="34px">
@@ -73,8 +73,11 @@
       <section class="catalog">
         <h2 class="visually-hidden">Товары</h2>
         <article class="product">
-          <a class="product__photo" href="#" title="Зайчик-попрыгайчик">
+          <a class="product__photo" href="product-1.html" title="Зайчик-попрыгайчик">
           <picture>
+            <source type="image/webp" media="(min-width: 1150px)" srcset="img/photo-hare-desktop@1x.webp 1x, img/photo-hare-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-hare-tablet@1x.webp 1x, img/photo-hare-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/photo-hare-mobile@1x.webp 1x, img/photo-hare-mobile@2x.webp 2x">
             <source media="(min-width:1150px)" srcset="img/photo-hare-desktop@1x.jpg 1x, img/photo-hare-desktop@2x.jpg 2x">
             <source media="(min-width: 768px)" srcset="img/photo-hare-tablet@1x.jpg 1x, img/photo-hare-tablet@2x.jpg 2x">
             <img src="img/photo-hare-mobile@1x.jpg" srcset="img/photo-hare-mobile@2x.jpg 2x" alt="Зайчик-попрыгайчик">
@@ -82,7 +85,7 @@
           </a>
           <div class="product__description">
             <h2 class="product__title">
-              <a class="product__link" href="#">Зайчик-попрыгайчик</a>
+              <a class="product__link" href="product-1.html">Зайчик-попрыгайчик</a>
             </h2>
             <p class="product__about">Рост 30 см, вес 200 г</p>
             <div class="product__order">
@@ -97,8 +100,11 @@
           </div>
         </article>
         <article class="product">
-          <a class="product__photo" href="#" title="Корзинка для белья">
+          <a class="product__photo" href="product-2.html" title="Корзинка для белья">
             <picture>
+            <source type="image/webp" media="(min-width: 1150px)" srcset="img/photo-bowl-desktop@1x.webp 1x, img/photo-bowl-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-bowl-tablet@1x.webp 1x, img/photo-bowl-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/photo-bowl-mobile@1x.webp 1x, img/photo-bowl-mobile@2x.webp 2x">
             <source media="(min-width: 1150px)" srcset="img/photo-bowl-desktop@1x.jpg 1x, img/photo-bowl-desktop@2x.jpg 2x">
             <source media="(min-width: 768px)" srcset="img/photo-bowl-tablet@1x.jpg 1x, img/photo-bowl-tablet@2x.jpg 2x">
             <img src="img/photo-bowl-mobile@1x.jpg" srcset="img/photo-bowl-mobile@2x.jpg 2x"  alt="Корзинка для белья">
@@ -106,7 +112,7 @@
           </a>
           <div class="product__description">
             <h2 class="product__title">
-              <a class="product__link" href="#">Корзинка для белья</a>
+              <a class="product__link" href="product-2.html">Корзинка для белья</a>
             </h2>
             <p class="product__about">Диаметр 15 см, высота 10 см</p>
             <div class="product__order">
@@ -121,8 +127,11 @@
           </div>
         </article>
         <article class="product">
-          <a class="product__photo" href="#" title="Большая корзинка для игрушек">
+          <a class="product__photo" href="product-3.html" title="Большая корзинка для игрушек">
             <picture>
+            <source type="image/webp" media="(min-width: 1150px)" srcset="img/photo-toys-desktop@1x.webp 1x, img/photo-toys-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-toys-tablet@1x.webp 1x, img/photo-toys-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/photo-toys-mobile@1x.webp 1x, img/photo-toys-mobile@2x.webp 2x">
             <source media="(min-width:1150px)" srcset="img/photo-toys-desktop@1x.jpg 1x, img/photo-toys-desktop@2x.jpg 2x">
             <source media="(min-width: 768px)" srcset="img/photo-toys-tablet@1x.jpg 1x, img/photo-toys-tablet@2x.jpg 2x">
             <img src="img/photo-toys-mobile@1x.jpg" srcset="img/photo-toys-mobile@2x.jpg 2x" alt="Большая корзинка для игрушек">
@@ -130,7 +139,7 @@
           </a>
           <div class="product__description product__description--layer3">
             <h2 class="product__title">
-              <a class="product__link product__link--layer3" href="#">Большая корзинка<br> для игрушек</a>
+              <a class="product__link product__link--layer3" href="product-3.html">Большая корзинка<br> для игрушек</a>
             </h2>
             <p class="product__about product__about--text">Диаметр 30 см, высота 30 см</p>
             <div class="product__order">
@@ -153,6 +162,9 @@
           Процесс производства</h2>
           <div class="process__video">
             <picture>
+            <source type="image/webp" media="(min-width: 1150px)" srcset="img/video-desktop@1x.webp 1x, img/video-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/video-tablet@1x.webp 1x, img/video-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/video-mobile@1x.webp 1x, img/video-mobile@2x.webp 2x">
             <source media="(min-width: 1150px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
             <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
             <img src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" alt="Процесс производства">
@@ -175,7 +187,7 @@
     <footer class="page-footer">
         <div class="page-footer__inner">
             <div class="page-footer__item footer-logo">
-            <a class="footer-logo__item" href="index.html" alt="Логотип магазина «Мишка»">
+            <a class="footer-logo__item" href="index.html">
             <svg class="footer-logo__icon" width="101.615px" height="34.056px">
               <use xlink:href="img/sprite.svg#icon-footer-logo"></use>
             </svg>
