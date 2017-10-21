@@ -7,6 +7,9 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
+    <div style="display: none">
+      <include src="build/img/sprite.svg"></include>
+    </div>
     <header class="main-header">
       <button class="main-header__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
@@ -119,7 +122,7 @@
         </div>
         <div class="goods-of-the-week__order">
           <p class="goods-of-the-week__price">Цена: 990 руб.</p>
-          <a class="goods-of-the-week__to-order button" href="#">Заказать</a>
+          <a class="goods-of-the-week__to-order button modal-button" href="#">Заказать</a>
               <svg class="goods-of-the-week__icon" width="1150px" height="23px">
                 <use xlink:href="img/sprite.svg#icon-zigzag-line"></use>
               </svg>
@@ -197,19 +200,8 @@
       <section class="contacts">
         <div class="contacts__wrap">
         <h2 class="contacts__title">
-          <svg class="contacts__icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="46.68px" height="81.691px" viewBox="-11.34 -28.346 46.68 81.691" enable-background="new -11.34 -28.346 46.68 81.691" xml:space="preserve">
-              <g id="miu">
-                <g id="Artboard-1" transform="translate(-755.000000, -443.000000)">
-                    <g id="slice" transform="translate(215.000000, 119.000000)">
-                    </g>
-                      <g id="editor-flag-triangle-notification-glyph">
-                        <path fill="#63D1BB" d="M751.439,418.545v38.9l38.9-19.451L751.439,418.545z M743.66,496.346v-81.691h3.805v81.691H743.66z"/>
-                      </g>
-                </g>
-              </g>
-                  <g>
-                    <rect x="-11.34" y="-28.346" fill="#231F20" width="3.805" height="81.691"/>
-                  </g>
+          <svg class="contacts__icon" width="46.68px" height="81.691px">
+                <use xlink:href="img/sprite.svg#icon-flag"></use>
             </svg>
           Контакты</h2>
           <ul class="contacts__list">
@@ -224,7 +216,7 @@
           </ul>
         </div>
       <div class="contacts__map">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6152511412683!2d30.32116901593964!3d59.938526269069975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fb661d55f%3A0xd0cc7f055debe430!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2s!4v1506962375066" width="320" height="455" frameborder="0" style="border:0" allowfullscreen></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6152511412683!2d30.32116901593964!3d59.938526269069975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fb661d55f%3A0xd0cc7f055debe430!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2s!4v1506962375066" width="320" height="455" frameborder="0" style="border:0" allowfullscreen=""></iframe>
       </div>
       <div class="contacts__button">
           <a class="contacts__write-us button" href="write-us-form.html">Напишите нам</a>
@@ -273,20 +265,20 @@
     </footer>
 
     <div class="modal">
-      <form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
+      <form class="modal__form" action="https://echo.htmlacademy.ru" method="post">
         <h2 class="modal__title">Добавить в корзину</h2>
-        <p class="modal-form__title">Выберите размер:</p>
-        <div class="modal-form__sizes">
-          <input class="modal-form__input" type="radio" name="size-1" id="size-1">
-          <label class="modal-form__label" for="size-1">S</label>
-          <input class="modal-form__input" type="radio" name="size-2" id="size-2">
-          <label class="modal-form__label" for="size-2">M</label>
-          <input class="modal-form__input" type="radio" name="size-3" id="size-3">
-          <label class="modal-form__label" for="size-3">L</label>
+        <p class="modal__text">Выберите размер:</p>
+        <div class="modal__sizes">
+          <input class="modal__input" type="radio" name="size" value="S" id="size-1">
+          <label class="modal__label" for="size-1">S</label>
+          <input class="modal__input" type="radio" name="size" value="M" id="size-2">
+          <label class="modal__label" for="size-2">M</label>
+          <input class="modal__input" type="radio" name="size" value="L" id="size-3">
+          <label class="modal__label" for="size-3">L</label>
         </div>
-        <button class="button modal-form__button" type="submit">Добавить</button>
+        <button class="modal__button" type="submit">Добавить</button>
       </form>
     </div>
-
+      <script src="js/script.js"></script>
   </body>
 </html>

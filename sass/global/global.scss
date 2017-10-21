@@ -20,15 +20,15 @@ a {
   margin: 0 auto;
 }
 
+img {
+  width: 100%;
+  height: auto;
+}
+
 @media (min-width: $tablet-width) {
   .main-content {
     width: 768px;
     margin: 0 auto;
-  }
-
-  img {
-    width: 100%;
-    height: auto;
   }
 }
 

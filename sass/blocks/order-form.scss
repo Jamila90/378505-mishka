@@ -249,14 +249,14 @@
 
 .order-form__icon--tel {
   position: absolute;
-  top: 11px;
+  top: 35px;
   right: 8px;
   fill: #c1c1c1;
 }
 
 .order-form__icon--email {
   position: absolute;
-  top: 12px;
+  top: 33px;
   right: 4px;
   fill: #c1c1c1;
 }
@@ -275,7 +275,7 @@
 
 @media (min-width: $tablet-width) {
   .order-form {
-    margin-bottom: 47px;
+    margin-bottom: 50px;
   }
 
   .order-form__fieldset {
@@ -318,15 +318,15 @@
   }
 
   .order-form__legend--tel {
-    margin-top: 65px;
+    margin-top: 45px;
   }
 
   .order-form__legend--email {
-    margin-top: 40px;
+    margin-top: 20px;
   }
 
   .order-form__legend--additionally {
-    margin-top: 68px;
+    margin-bottom: 95px;
   }
 
   .order-form__list--colors {
