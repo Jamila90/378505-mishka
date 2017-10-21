@@ -7,12 +7,15 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
+    <div style="display: none">
+      <include src="build/img/sprite.svg"></include>
+    </div>
     <header class="main-header">
       <button class="main-header__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
       <nav class="top-menu top-menu--opened">
-        <a class="top-menu__logo"  href="index.html">
+        <a class="top-menu__logo" href="index.html">
         <picture>
           <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
           <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
@@ -80,7 +83,7 @@
             </h2>
             <ul class="order-form__list">
               <li class="order-form__item order-form__item--radio">
-                <input class="order-form__input" type="radio" name="type" value="1" id="type-1" checked>
+                <input class="order-form__input" type="radio" name="type" value="1" id="type-1" checked="">
                 <label class="order-form__label order-form__label--radio" for="type-1">Аксессуар для интерьера</label>
               </li>
               <li class="order-form__item order-form__item--radio">
@@ -93,11 +96,11 @@
             <h2 class="order-form__legend order-form__legend--colors">Цвет</h2>
             <ul class="order-form__list order-form__list--colors">
               <li class="order-form__item order-form__item--checkbox">
-                <input class="order-form__input" type="checkbox" name="color" value="1" id="color-1" checked>
+                <input class="order-form__input" type="checkbox" name="color" value="1" id="color-1" checked="">
                 <label class="order-form__label order-form__label--checkbox" for="color-1">Белый</label>
               </li>
               <li class="order-form__item order-form__item--checkbox">
-                <input class="order-form__input" type="checkbox" name="color" value="2" id="color-2" checked>
+                <input class="order-form__input" type="checkbox" name="color" value="2" id="color-2" checked="">
                 <label class="order-form__label order-form__label--checkbox" for="color-2">Серый</label>
               </li>
               <li class="order-form__item order-form__item--checkbox">
@@ -155,7 +158,7 @@
           </section>
           <section class="order-form__fieldset order-form__fieldset--additionally">
               <div class="order-form__item order-form__item--textarea">
-              <label class="order-form__legend order-form__legend--additionally" for="wishes" >Доп</label>
+              <label class="order-form__legend order-form__legend--additionally" for="wishes">Доп</label>
               <textarea class="order-form__textarea" id="wishes" placeholder="Опишите все ваши пожелания к заказу"></textarea>
               </div>
           </section>

@@ -5,8 +5,12 @@
   left: 0;
   width: 100%;
   height: 100vh;
-  background-color: $white;
+  background: rgba(255, 255, 255, 0.9);
   z-index: 10000;
+}
+
+.modal--show {
+  display: block;
 }
 
 .modal__title {
@@ -17,4 +21,73 @@
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
+}
+
+.modal__text {
+  font-size: 15px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.modal__sizes {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.modal__input {
+  display: none;
+}
+
+.modal__label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-basis: 60px;
+  padding: 16px 10px;
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: 700;
+  border: 2px solid $light-gray;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    border-color: #c7c7c7;
+  }
+
+  &:active {
+    border-color: $light-green;
+  }
+}
+
+.modal__input:checked + .modal__label {
+  border-color: $light-green;
+}
+
+.modal__button {
+  width: 100%;
+  background-color: $light-green;
+  color: $white;
+  border: none;
+  font-size: 18.2px;
+  line-height: 20px;
+  font-weight: 700;
+  display: block;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  text-transform: uppercase;
+  text-align: center;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: $dark-gray;
+    color: $white;
+  }
+
+  &:active {
+    background-color: $dark-gray;
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
