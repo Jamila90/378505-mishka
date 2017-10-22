@@ -16,6 +16,7 @@ var minifyjs = require("gulp-js-minify");
 var server = require("browser-sync").create();
 var run = require("run-sequence");
 var del = require("del");
+var cheerio = require("gulp-cheerio");
 
 gulp.task("style", function() {
   gulp.src("sass/style.scss")
@@ -55,6 +56,12 @@ gulp.task("webp", function() {
 
 gulp.task("sprite", function() {
     return gulp.src("img/icon-*.svg")
+    .pipe(cheerio({
+        run: function($) {
+            $("[fill]").removeAttr("fill");
+    },
+        parserOptions: { xmlMode: true}
+    }))
     .pipe(svgstore({inlineSvg: true}))
     .pipe(rename("sprite.svg"))
     .pipe(gulp.dest("build/img"));
@@ -66,16 +73,6 @@ gulp.task("html", function() {
         include()
     ]))
     .pipe(gulp.dest("build"));
-});
-
-gulp.task("serve", function() {
-  server.init({
-    server: "build/",
-    notify: false,
-    open: true,
-    cors: true,
-    ui: false
-  });
 });
 
 gulp.task("build", function(done) {
@@ -104,6 +101,14 @@ gulp.task("clean", function() {
    return del("build");
 });
 
-
-gulp.watch("sass/**/*.{scss,sass}", ["style"]);
-gulp.watch("*.html", ["html"]);
+gulp.task("serve", function() {
+  server.init({
+    server: "build/",
+    notify: false,
+    open: true,
+    cors: true,
+    ui: false
+  });
+    gulp.watch("sass/**/*.{scss,sass}", ["style"]);
+    gulp.watch("*.html", ["html"]);
+});
