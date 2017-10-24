@@ -43,3 +43,9 @@
     justify-content: center;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .social__item--twitter {
+    margin-right: 0;
+  }
+}

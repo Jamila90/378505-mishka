@@ -49,7 +49,6 @@
   color: $white;
   font-weight: 700;
   padding-top: 6px;
-  letter-spacing: 1px;
 }
 
 .products__bg-fill {
@@ -65,8 +64,10 @@
 
   .products__item {
     width: 50%;
-    padding: 35px;
+    padding-top: 32px;
+    padding-right: 35px;
     padding-bottom: 20px;
+    padding-left: 36px;
 
     &:hover,
     &:focus {
@@ -87,6 +88,7 @@
     top: 100px;
     left: 0;
     fill: $white;
+    width: 768px;
   }
 }
 
@@ -94,5 +96,9 @@
   .products {
     padding-left: 50px;
     padding-right: 50px;
+  }
+
+  .products__bg-fill {
+    width: 1150px;
   }
 }

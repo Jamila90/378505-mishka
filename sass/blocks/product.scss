@@ -30,7 +30,7 @@
 }
 
 .product__link {
-  font-size: 18px;
+  font-size: 17px;
   color: $black;
   font-weight: 700;
   letter-spacing: 0.2px;
@@ -95,7 +95,7 @@
 @media (min-width: $tablet-width) {
   .product {
     display: flex;
-    margin-bottom: 54px;
+    margin-bottom: 51px;
   }
 
   .product__order {
@@ -115,21 +115,19 @@
 
   .product__link {
     font-size: 20px;
-    line-height: 28px;
-    letter-spacing: 1.2px;
+    letter-spacing: 0;
   }
 
   .product__link--layer3 {
     line-height: 26px;
-    letter-spacing: 2px;
-    font-size: 18px;
+    font-size: 20px;
   }
 
   .product__about {
     padding-bottom: 15px;
     font-size: 15px;
     border: none;
-    margin-bottom: 153px;
+    margin-bottom: 155px;
   }
 
   .product__about--text {
@@ -165,7 +163,7 @@
   }
 
   .product__about {
-    margin-bottom: 15px;
+    margin-bottom: 19px;
   }
 
   .product__about--text {

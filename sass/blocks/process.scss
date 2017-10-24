@@ -1,5 +1,5 @@
 .process {
-  margin-bottom: 60px;
+  margin-bottom: 58px;
 }
 
 .process__items {
@@ -22,7 +22,7 @@
   padding-left: 90px;
   padding-top: 25px;
   margin-bottom: 24px;
-  font-size: 18px;
+  font-size: 17px;
   color: $black;
 }
 
@@ -59,7 +59,7 @@
 }
 
 .process__description {
-  padding: 0 30px;
+  padding: 0 33px;
   margin-bottom: 32px;
 }
 
@@ -67,7 +67,7 @@
   margin: 0;
   padding: 0;
   margin-bottom: 24px;
-  font-size: 14px;
+  font-size: 13px;
 }
 
 .process__button {
@@ -86,6 +86,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .process {
+    margin-bottom: 63px;
+  }
+
   .process__items {
     display: flex;
     padding-top: 0;
@@ -95,8 +99,7 @@
 
   .process__title {
     font-size: 20px;
-    padding-left: 102px;
-    letter-spacing: 1px;
+    padding-left: 107px;
   }
 
   .process__icon {
@@ -117,10 +120,10 @@
   }
 
   .process__description-text {
-    font-size: 15px;
+    font-size: 14px;
     line-height: 30px;
     margin-bottom: 34px;
-    letter-spacing: 0.4px;
+    letter-spacing: 0.6px;
     padding-top: 9px;
   }
 
@@ -166,10 +169,9 @@
   }
 
   .process__description-text {
-    font-size: 15px;
+    font-size: 14px;
     line-height: 30px;
     margin-bottom: 45px;
-    letter-spacing: 0.4px;
   }
 
   .process__icon {

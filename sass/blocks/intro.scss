@@ -5,7 +5,7 @@
   &--changing-page {
     background-image: url("../img/hero-mobile@1x.jpg");
     background-repeat: no-repeat;
-    background-position: 50% -12px;
+    background-position: 50% -18px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/hero-mobile@2x.jpg");
@@ -26,7 +26,6 @@
   font-weight: 700;
   text-align: center;
   margin: 0;
-  letter-spacing: 1px;
 }
 
 .intro__inner {
@@ -48,7 +47,7 @@
 .intro__title--inner {
   padding-top: 71px;
   padding-bottom: 73px;
-  font-size: 29px;
+  font-size: 27px;
   line-height: 30px;
   color: black;
   font-weight: 700;
@@ -72,17 +71,11 @@
     }
   }
 
-  .intro__title--index-page {
-    padding-top: 160px;
-    padding-bottom: 372px;
-  }
-
   .intro__title {
     font-size: 43px;
     line-height: 50px;
     padding-bottom: 372px;
     padding-top: 154px;
-    letter-spacing: 2px;
     padding-left: 44px;
     padding-right: 39px;
   }
@@ -102,16 +95,15 @@
   .intro__title--inner {
     padding-top: 96px;
     padding-bottom: 80px;
-    font-size: 45px;
+    font-size: 43px;
     line-height: 50px;
   }
 
   .intro__title--inner-page {
     padding-top: 96px;
     padding-bottom: 84px;
-    font-size: 44px;
+    font-size: 43px;
     line-height: 45px;
-    letter-spacing: 1px;
   }
 
   .intro__icon {
@@ -138,10 +130,10 @@
   .intro__title {
     font-size: 53px;
     line-height: 58px;
-    padding-bottom: 358px;
-    letter-spacing: 2.3px;
+    padding-bottom: 359px;
     padding-left: 266px;
     padding-right: 266px;
+    padding-top: 152px;
   }
 
   .intro__inner {
@@ -157,10 +149,17 @@
   }
 
   .intro__title--inner {
-    font-size: 55px;
+    font-size: 53px;
     line-height: 50px;
     padding-bottom: 100px;
     padding-top: 98px;
+  }
+
+  .intro__title--inner-page {
+    padding-bottom: 92px;
+    padding-left: 266px;
+    padding-right: 266px;
+    padding-top: 93px;
   }
 
   .intro__icon {
