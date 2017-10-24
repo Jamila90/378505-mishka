@@ -38,7 +38,7 @@ gulp.task("minify-js", function() {
   .pipe(gulp.dest("build/js"));
 });
 
-gulp.task("images", function(){
+gulp.task("images", function() {
     return gulp.src("img/**/*.{png,jpg,svg}")
      .pipe(imagemin([
         imagemin.optipng({optimizationLevel: 3}),
